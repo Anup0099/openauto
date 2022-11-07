@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 const HeroSection = () => {
   return (
-    <div className="flex w-full h-full">
+    <div className="flex w-full h-full text-light-black2">
       <div className="flex bg-off-white w-3/4 justify-center items-center  p-8 relative  ">
         <div className="flex items-center sm:w-max sm:h-10/12   w-max h-max">
           <Image
@@ -35,7 +35,7 @@ const HeroSection = () => {
             <div className="font-light text-xl">
               Track <span className="font-bold">Live</span>
             </div>
-            <div>Track Your Car Service Real-Time And get Status Updates</div>
+            <div className="font-light text-light-black2 font-inter">Track Your Car Service Real-Time And get Status Updates</div>
           </div>
           {/* 2 */}
           <div className="flex flex-col gap-2">
@@ -45,7 +45,7 @@ const HeroSection = () => {
             <div className='font-light text-xl'>
               Easy <span className="font-bold">Pick-Ups</span>
             </div>
-            <div className='font-light'>Book Your Preferred Slot For Pick-Up Your Vehicle</div>
+            <div className='font-light text-light-black2 font-inter'>Book Your Preferred Slot For Pick-Up Your Vehicle</div>
           </div>
           {/* 3 */}
           <div className="flex flex-col gap-2">
@@ -55,7 +55,7 @@ const HeroSection = () => {
             <div className='font-light text-xl'>
               Payment <span className="font-bold">Online</span>
             </div>
-            <div className="font-light">We Offer Flexible Payment Options For Your Convinience</div>
+            <div className="font-light font-inter">We Offer Flexible Payment Options For Your Convinience</div>
           </div>
         </div>
       </div>

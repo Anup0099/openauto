@@ -7,7 +7,7 @@ import Form from './Form'
 const LandingPage = () => {
   const [about, setAbout] = useState(false)
   return (
-    <div className=" sm:w-full sm:flex sm:flex-col  ">
+    <div className=" sm:w-full sm:flex sm:flex-col text-light-black2 ">
       {/* navbar */}
       <div className="nav flex justify-between p-8 sm:flex sm:justify-between  ">
         <Image src="/oo.png" height={200} width={200} alt="" />
@@ -18,7 +18,7 @@ const LandingPage = () => {
       </div>
       {/*  hero section*/}
       <div className="flex justify-around p-10 items-center sm:p-0  relative sm:flex-col sm:w-full ">
-        <div className="flex  flex-col sm:px-10  w-2/5 sm:w-full font-public">
+        <div className="flex text-light-black2 flex-col sm:px-10  w-2/5 sm:w-full font-public">
           <h1 className="text-7xl sm:text-5xl ">
             Delivered to <br />
             <span className="text-7xl font-extrabold sm:text-5xl">
@@ -115,7 +115,7 @@ const LandingPage = () => {
           <div>
             <Image src="/OpenAuto_Logo.png" height={100} width={100} alt="" />
           </div>
-          <div>Copyright @ 2022 OpenAuto All Rights Reserved</div>
+          <div className="font-light">Copyright @ 2022 OpenAuto All Rights Reserved</div>
         </div>
       )}
     </div>
