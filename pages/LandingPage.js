@@ -9,7 +9,7 @@ const LandingPage = () => {
   return (
     <div className=" sm:w-full sm:flex sm:flex-col text-light-black2 ">
       {/* navbar */}
-      <div className="nav flex justify-between p-8 sm:flex sm:justify-between  ">
+      <div className="nav flex justify-between p-8 sm:flex sm:justify-between sm:px-10  ">
         <Image src="/oo.png" height={200} width={200} alt="" />
 
         <button className="border border-gray-400 bg-white-smoke  px-8 rounded-md sm:hidden">
@@ -25,7 +25,7 @@ const LandingPage = () => {
               Your Door.
             </span>
           </h1>
-          <div className="font-inter text-base font-light  py-2 text-light-black2  sm:p-3 ">
+          <div className="font-inter text-base font-light  py-4 pr-8 text-light-black2  sm:p-3 ">
             Contrary To Popular Belief, Lorem Ipsum Is Not Simply Random Text.
             It Has Roots In A Piece Of Classical Latin Literature From 45 Bc,
             Making It Over 2000 Years Old.
