@@ -31,7 +31,7 @@ const Form = () => {
   return (
     <div className="flex px-40 py-20 sm:gap-10 sm:px-5 sm:flex-col gap-40">
       <div className="flex flex-col gap-y-2 w-1/2 sm:w-full">
-        <div className="text-5xl font-light">
+        <div className="text-5xl text-light-black2 font-light">
           We're All
           <br />
           <span className="text-5xl font-extrabold">Ears!</span>
