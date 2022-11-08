@@ -26,7 +26,13 @@ const LandingPage = () => {
       
       "
       >
-        <Image src="/oo.png" className="4xl:w-80 " height={200} width={200} alt="" />
+        <Image
+          src="/oo.png"
+          className="4xl:w-80 "
+          height={200}
+          width={200}
+          alt=""
+        />
 
         <button className="border border-gray-400 bg-white-smoke  rounded-md sm:hidden">
           <a href="#Form" className="font-public  px-8">
@@ -55,18 +61,22 @@ const LandingPage = () => {
 
         "
         >
-          <div className="text-7xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl
+          <div
+            className="text-7xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl
           4xl:text-8xl 
-          ">
+          "
+          >
             Delivered to <br />
             <span className="text-7xl font-extrabold sm:text-5xl md:text-6xl xl:text-6xl 4xl:text-8xl">
               Your Door.
             </span>
           </div>
-          <div className="font-inter text-base font-light  py-4 pr-8 text-light-black2  sm:p-3  md:p-4  lg:text-base xl:text-base
+          <div
+            className="font-inter text-base font-light  py-4 pr-8 text-light-black2  sm:p-3  md:p-4  lg:text-base xl:text-base
           
           4xl:text-base
-          ">
+          "
+          >
             Contrary To Popular Belief, Lorem Ipsum Is Not Simply Random Text.
             It Has Roots In A Piece Of Classical Latin Literature From 45 Bc,
             Making It Over 2000 Years Old.
@@ -156,9 +166,9 @@ const LandingPage = () => {
           setAbout(!about)
         }}
       >
-        <div className="font-inter">
-          {!about ? 'Explore More' : 'Explore Less'}
-        </div>
+        <a href="#hero">
+          <div className="font-inter">Explore more</div>
+        </a>
         {about && (
           <div>
             <Image
@@ -177,7 +187,11 @@ const LandingPage = () => {
         )}
       </div>
       {/* middle section */}
-      {about && <HeroSection />}
+      {about && (
+        <div id="hero">
+          <HeroSection  />
+        </div>
+      )}
       {/* form section */}
 
       {about && (
