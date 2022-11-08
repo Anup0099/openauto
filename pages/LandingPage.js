@@ -18,14 +18,15 @@ const LandingPage = () => {
       <div
         className="nav flex justify-between py-8 px-10  sm:px-10 lg:px-20 xxl:px-20 
       3xl:px-36
-       4xl:px-56
+       4xl:px-40
+   
        
 
 
       
       "
       >
-        <Image src="/oo.png" height={200} width={200} alt="" />
+        <Image src="/oo.png" className="4xl:w-80 " height={200} width={200} alt="" />
 
         <button className="border border-gray-400 bg-white-smoke  rounded-md sm:hidden">
           <a href="#Form" className="font-public  px-8">
@@ -49,16 +50,19 @@ const LandingPage = () => {
         md:w-full md:px-10
         lg:w-full lg:px-10
         xl:pt-20
+        
        
 
         "
         >
-          <h1 className="text-7xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl">
+          <div className="text-7xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl
+          4xl:text-8xl 
+          ">
             Delivered to <br />
-            <span className="text-7xl font-extrabold sm:text-5xl md:text-6xl xl:text-6xl ">
+            <span className="text-7xl font-extrabold sm:text-5xl md:text-6xl xl:text-6xl 4xl:text-8xl">
               Your Door.
             </span>
-          </h1>
+          </div>
           <div className="font-inter text-base font-light  py-4 pr-8 text-light-black2  sm:p-3  md:p-4  lg:text-base xl:text-base
           
           4xl:text-2xl
