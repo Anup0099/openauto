@@ -8,7 +8,7 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const reg = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
+    const reg = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/
     // console.log(reg.test(phone))
     if (phone.match(reg)) {
       setErrorEmail(false)
@@ -16,7 +16,7 @@ const Form = () => {
       setErrorEmail(true)
     }
   }
-  
+
   //name validator
   const handleNameChange = (e) => {
     setName(e.target.value)
@@ -29,23 +29,36 @@ const Form = () => {
   }
 
   return (
-    <div className="flex px-40 py-20 sm:gap-10 sm:px-5 sm:flex-col gap-40">
-      <div className="flex flex-col gap-y-2 w-1/2 sm:w-full">
-        <div className="text-5xl text-light-black2 font-light">
+    <div
+      className="flex px-40 py-20 sm:gap-10 sm:px-5 sm:flex-col gap-40 
+      md:px-34 md:flex-col 
+      lg:px-40 lg:flex-col
+    
+    "
+    >
+      <div
+        className="flex flex-col gap-y-2 w-1/2 sm:w-full
+      
+      
+      "
+      >
+        <div className="text-5xl font-public text-light-black2 font-light">
           We're All
           <br />
           <span className="text-5xl font-extrabold">Ears!</span>
         </div>
-        <div className="text-base font-inter">
+        <div className="text-lg font-inter">
           If you Trouble Managing Your Order, Or Want To Talk To One Of Your
           Expert Technicians We Are Here For You!
         </div>
       </div>
       {/* form */}
-      <form onSubmit={handleSubmit} className = 'w-full '>
-        <div className=" w-3/4 flex flex-col gap-10 sm:w-full">
+      <form onSubmit={handleSubmit} className="w-full ">
+        <div className=" w-3/4 flex flex-col gap-10 sm:w-full  ">
           <div className="border border-light-black p-2 rounded-md w-full relative">
-            <div className="absolute -top-4 bg-white-smoke ml-4 p-1   text-light-black">Name</div>
+            <div className="font-inter absolute -top-4 bg-white-smoke ml-4 p-1   text-light-black">
+              Name
+            </div>
 
             <input
               type="text"
@@ -54,12 +67,14 @@ const Form = () => {
             />
           </div>
           {error && (
-            <span className="text-red-500">
+            <span className="text-red-500 font-inter">
               name should be greater than 4 characters
             </span>
           )}
           <div className="border border-light-border p-2 rounded-md w-full relative">
-            <div className="absolute -top-4 bg-white-smoke ml-4 p-1 text-light-black">Phone</div>
+            <div className="absolute -top-4 bg-white-smoke ml-4 p-1 text-light-black">
+              Phone
+            </div>
 
             <input
               className="focus:outline-none py-2 bg-white-smoke"
@@ -70,15 +85,34 @@ const Form = () => {
             />
           </div>
           {errorEmail && (
-            <span className="text-red-500">Please enter a valid phone number</span>
+            <span className="text-red-500 font-inter">
+              Please enter a valid phone number
+            </span>
           )}
           <div className="border border-light-border rounded-md w-full relative p-3 h-28">
-            <div className="absolute -top-4 bg-white-smoke ml-4 p-1 text-light-black">Message</div>
+            <div className="font-inter absolute -top-4 bg-white-smoke ml-4 p-1 text-light-black">
+              Message
+            </div>
 
-            <textarea name="" className='resize-none focus:outline-none h-full  w-full py-2 bg-white-smoke' rows="5"></textarea>
+            <textarea
+              name=""
+              className="resize-none focus:outline-none h-full  w-full py-2 bg-white-smoke"
+              rows="5"
+            ></textarea>
           </div>
-          <div className="flex  border border-light-border rounded-md p-1 w-max sm:w-full sm:justify-center">
-            <button type="submit" className = 'w-full h-full px-20 py-2 text-light-black'>Submit</button>
+          <div
+            className="flex font-inter border border-light-border rounded-md p-1 w-max sm:w-full sm:justify-center
+          
+          
+          "
+          >
+            <button
+              type="submit"
+              className="w-full h-full px-20 py-2 text-light-black"
+              font-inter
+            >
+              Submit
+            </button>
           </div>
         </div>
       </form>

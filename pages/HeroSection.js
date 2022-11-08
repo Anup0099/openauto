@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 const HeroSection = () => {
   return (
-    <div className="flex w-full h-full text-light-black2">
+    <div className="flex w-full h-full text-light-black2 p-5 ">
       <div className="flex bg-off-white w-3/4 justify-center items-center  p-8 relative  ">
         <div className="flex items-center sm:w-max sm:h-10/12   w-max h-max">
           <Image
@@ -13,13 +13,13 @@ const HeroSection = () => {
             alt=""
           />
         </div>
-        <div className="text-5xl font-light z-10 absolute top-10 sm:top-20 -right-48">
+        <div className="text-5xl font-public px-3 font-light z-10 absolute top-10 sm:top-20 -right-44">
           About <br /> <span className="text-5xl font-extrabold">OpenAuto</span>
         </div>
       </div>
 
       <div className="flex flex-col  mt-36">
-        <div className="flex p-5 items-start text-base mt-5 w-2/4 sm:w-full font-inter ">
+        <div className="flex p-5 items-start text-base mt-5 w-2/4 sm:w-full md:full font-inter ">
           It is a long established fact that a reader will be distracted by the
           readable content of a page when looking at its layout. The point of
           using Lorem Ipsum is that it has a more-or-less normal distribution of
@@ -32,7 +32,7 @@ const HeroSection = () => {
             <div className="">
               <Image src="/LiveTrack_icon.svg" height={25} width={25} alt="" />
             </div>
-            <div className="font-light text-xl">
+            <div className="font-light font-public text-xl">
               Track <span className="font-bold">Live</span>
             </div>
             <div className="font-light text-light-black2 font-inter">Track Your Car Service Real-Time And get Status Updates</div>
@@ -42,7 +42,7 @@ const HeroSection = () => {
             <div>
               <Image src="/Pickup_icon.svg" height={25} width={25} alt="" />
             </div>
-            <div className='font-light text-xl'>
+            <div className='font-light font-public text-xl'>
               Easy <span className="font-bold">Pick-Ups</span>
             </div>
             <div className='font-light text-light-black2 font-inter'>Book Your Preferred Slot For Pick-Up Your Vehicle</div>
@@ -52,7 +52,7 @@ const HeroSection = () => {
             <div>
               <Image src="/secure.png" height={25} width={25} alt="" />
             </div>
-            <div className='font-light text-xl'>
+            <div className='font-light font-public text-xl'>
               Payment <span className="font-bold">Online</span>
             </div>
             <div className="font-light font-inter">We Offer Flexible Payment Options For Your Convinience</div>

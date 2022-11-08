@@ -18,13 +18,20 @@ module.exports = {
       },
     },
     fontFamily: {
-      'inter': ['Inter'],
-      'public': ['Public Sans','sans-serif'],
+      inter:" 'Inter', 'sans-serif'",
+      public:" 'Public Sans', 'sans-serif'",
+      
     },
     screens: {
-      sm: { max: '640px' },
-      md: { max: '768px' },
-      lg: { max: '1024px' },
+      sm: {max: '640px' },
+      'md':{'min':'641px','max': '820px' },
+    
+      'lg': {'min':'821px','max': '1024px' },
+      'xl': {'min':'1025px','max': '1280px' },
+      'xxl': {'min': '1281px' ,'max': '1536px' },
+      '3xl': {'min': '1537px','max':'1920px' },
+      '4xl': {'min': '1921px','max':'2560px' },
+     
     },
   },
   plugins: [],
