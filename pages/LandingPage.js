@@ -17,7 +17,9 @@ const LandingPage = () => {
       {/* navbar */}
       <div
         className="nav flex justify-between py-8 px-10  sm:px-10 lg:px-20 xxl:px-20 
-      3xl:px-36 4xl:px-36
+      3xl:px-36
+       4xl:px-56
+       
 
 
       
@@ -25,8 +27,10 @@ const LandingPage = () => {
       >
         <Image src="/oo.png" height={200} width={200} alt="" />
 
-        <button className="border border-gray-400 bg-white-smoke  px-8 rounded-md sm:hidden">
-          <a href="#Form" className="font-public">Contact</a>
+        <button className="border border-gray-400 bg-white-smoke  rounded-md sm:hidden">
+          <a href="#Form" className="font-public  px-8">
+            Contact
+          </a>
         </button>
       </div>
       {/*  hero section*/}
@@ -55,7 +59,10 @@ const LandingPage = () => {
               Your Door.
             </span>
           </h1>
-          <div className="font-inter text-base font-light  py-4 pr-8 text-light-black2  sm:p-3  md:p-4  lg:text-base xl:text-base">
+          <div className="font-inter text-base font-light  py-4 pr-8 text-light-black2  sm:p-3  md:p-4  lg:text-base xl:text-base
+          
+          4xl:text-2xl
+          ">
             Contrary To Popular Belief, Lorem Ipsum Is Not Simply Random Text.
             It Has Roots In A Piece Of Classical Latin Literature From 45 Bc,
             Making It Over 2000 Years Old.
@@ -118,14 +125,17 @@ const LandingPage = () => {
       </div>
 
       {/* social icons */}
-      <div className="flex justify-end items-center pr-10 gap-6 sm:hidden
+      <div
+        className="flex justify-end items-center pr-10 gap-6 sm:hidden
       
       md:hidden lg:hidden
       xl:px-10 
       2xl:px-10
       3xl:px-36
+      4xl:px-48
       
-      ">
+      "
+      >
         <div>
           <Image src="/Facebook_icon.svg" height={20} width={10} alt="" />
         </div>
@@ -142,7 +152,9 @@ const LandingPage = () => {
           setAbout(!about)
         }}
       >
-        <div className="font-inter">{!about ? 'Explore More' : 'Explore Less'}</div>
+        <div className="font-inter">
+          {!about ? 'Explore More' : 'Explore Less'}
+        </div>
         {about && (
           <div>
             <Image
