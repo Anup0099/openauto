@@ -13,8 +13,11 @@ const HeroSection = () => {
             alt=""
           />
         </div>
-        <div className="text-5xl font-public px-3 font-light z-10 absolute top-10 sm:top-20 -right-44">
-          About <br /> <span className="text-5xl font-extrabold">OpenAuto</span>
+        <div className="text-5xl font-public px-3 font-light z-10 absolute top-10 sm:top-20 -right-44
+        
+        4xl:text-6xl
+        ">
+          About <br /> <span className="text-5xl font-extrabold 4xl:text-6xl">OpenAuto</span>
         </div>
       </div>
 

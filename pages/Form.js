@@ -42,10 +42,13 @@ const Form = () => {
       
       "
       >
-        <div className="text-5xl font-public text-light-black2 font-light">
+        <div className="text-5xl font-public text-light-black2 font-light
+        
+        4xl:text-6xl
+        ">
           We're All
           <br />
-          <span className="text-5xl font-extrabold">Ears!</span>
+          <span className="text-5xl font-public font-extrabold 4xl:text-6xl">Ears!</span>
         </div>
         <div className="text-lg font-inter">
           If you Trouble Managing Your Order, Or Want To Talk To One Of Your
