@@ -65,7 +65,7 @@ const LandingPage = () => {
           </div>
           <div className="font-inter text-base font-light  py-4 pr-8 text-light-black2  sm:p-3  md:p-4  lg:text-base xl:text-base
           
-          4xl:text-2xl
+          4xl:text-base
           ">
             Contrary To Popular Belief, Lorem Ipsum Is Not Simply Random Text.
             It Has Roots In A Piece Of Classical Latin Literature From 45 Bc,

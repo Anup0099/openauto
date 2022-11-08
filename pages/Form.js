@@ -50,7 +50,7 @@ const Form = () => {
           <br />
           <span className="text-5xl font-public font-extrabold 4xl:text-6xl">Ears!</span>
         </div>
-        <div className="text-lg font-inter">
+        <div className="text-base font-inter">
           If you Trouble Managing Your Order, Or Want To Talk To One Of Your
           Expert Technicians We Are Here For You!
         </div>
