@@ -22,14 +22,14 @@ const HeroSection = () => {
       </div>
 
       <div className="flex flex-col  mt-36">
-        <div className="flex p-5 items-start text-base mt-5 w-2/4 sm:w-full md:full font-inter ">
+        <div className="flex sm:mt-10 p-5 items-start text-base  w-2/4 sm:w-full md:full font-inter ">
           It is a long established fact that a reader will be distracted by the
           readable content of a page when looking at its layout. The point of
           using Lorem Ipsum is that it has a more-or-less normal distribution of
           letters, as opposed to using 'Content here, content here', making it
           look like readable English.
         </div>
-        <div className="flex sm:flex-col sm:pr-1 justify-around gap-5 sm:gap-10 sm:pl-2.5 pl-5">
+        <div className="flex mt-6 sm:flex-col sm:pr-1 justify-around gap-5 sm:gap-10 sm:pl-2.5 pl-5">
           {/* 1 */}
           <div className="flex flex-col gap-2 ">
             <div className="">
