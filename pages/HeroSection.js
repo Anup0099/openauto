@@ -2,9 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 const HeroSection = () => {
   return (
-    <div className="flex flex-col  w-full h-full text-light-black2 p-5 ">
-      <div className="flex">
-        <div className="flex bg-off-white w-1/4 justify-center items-center  p-8 relative  ">
+    <div className="flex flex-col  w-full h-full  text-light-black2  ">
+      <div className="flex ">
+        <div className="flex   w-1/4 justify-center items-center  p-8 relative  ">
           <div className="flex items-center sm:w-max sm:h-10/12   w-max h-max ">
             <Image
               src="/ABOUT.png"
@@ -27,13 +27,13 @@ const HeroSection = () => {
           </div>
         </div>
         <div
-          className=" font-inter flex flex-col text-base w-3/4 align-center p-10 mt-32 gap-5 justify-end
+          className=" font-inter text-light-black3 flex flex-col text-base w-3/4 align-center p-10 mt-32 gap-5 justify-end
           sm:mt-40
           
           
           "
         >
-          <div>
+          <div class="text-light-black3">
             Our mission is to make auto repair and maintenance accessible to
             <br />
             every vehicle owner at a click of a button.
@@ -58,7 +58,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center p-20 sm:p-2">
+      <div className="flex justify-center  p-40 sm:p-2">
         <div className=" flex flex-wrap   sm:flex-col   lg:w-5/6  xxl:w-2/3 3xl:w-2/3 4xl:w-2/3 justify-center ">
           {/* 1 */}
           <div className="flex  flex-col  pb-20 pr-20 sm:p-10 sm:w-full md:w-full lg:w-full lg:p-10 w-1/2 gap-3  border-r-2 border-b-2  sm:border-none md:border-none lg:border-none">
@@ -75,14 +75,14 @@ const HeroSection = () => {
                 Track <span className="font-bold">Live</span>
               </div>
             </div>
-            <div className="font-light   text-base text-light-black2 font-inter">
+            <div className="font-light   text-base text-light-black3 font-inter">
               Track Your Car Service Real-Time And
               <br />
               get Status Updates
             </div>
           </div>
           {/* 2 */}
-          <div className="flex  pl-60 pb-20 sm:p-10 sm:w-full md:w-full lg:w-full lg:p-10 flex-col w-1/2  gap-3 border-b-2  sm:border-none md:border-none lg:border-none">
+          <div className="flex  pl-60 pb-20 sm:p-10 sm:w-full md:w-full md:pl-0 lg:w-full lg:p-10 flex-col w-1/2  gap-3 border-b-2  sm:border-none md:border-none lg:border-none">
           <div className="sm:flex gap-2 md:flex lg:flex">
 
             <div className="pb-2">
@@ -92,7 +92,7 @@ const HeroSection = () => {
               Easy <span className="font-bold">Pick-ups</span>
             </div>
           </div>
-            <div className="font-light text-base text-light-black2 font-inter">
+            <div className="font-light text-base text-light-black3 font-inter">
               Book your Preferred Slot For Pick-Up
               <br />
               Of Your Vehicle
@@ -109,14 +109,14 @@ const HeroSection = () => {
             </div>
 
           </div>
-            <div className="font-light text-base text-light-black2 font-inter">
+            <div className="font-light text-base text-light-black3 font-inter">
               We Offer Flexible Payment Options For
               <br />
               Your Convenience
             </div>
           </div>
           {/* 4 */}
-          <div className="flex  sm:pl-0 sm: sm:w-full  md:w-full lg:w-full lg:p-10 sm:border-none w-1/2 pt-20 pl-60 flex-col  gap-3   ">
+          <div className="flex  sm:pl-0 sm: sm:w-full  md:w-full md:pl-0 lg:w-full lg:p-10 sm:border-none w-1/2 pt-20 pl-60 flex-col  gap-3   ">
           <div className="sm:flex gap-3   md:flex lg:flex">
 
             <div className="pb-2">
@@ -126,7 +126,7 @@ const HeroSection = () => {
               <span className="font-bold">Discounts</span>
             </div>
           </div>
-            <div className="font-light text-base text-light-black2 font-inter">
+            <div className="font-light text-base text-light-black3 font-inter">
               Earn Exciting Rewards On Your Referrals,Share Now!
             </div>
           </div>

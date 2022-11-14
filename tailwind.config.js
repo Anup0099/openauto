@@ -11,6 +11,7 @@ module.exports = {
         'off-white': '#F0F2F4',
         'light-gray': '#EDEDED',
         'light-black': '#414548',
+        'light-black3': '#61686C',
         'white-smoke': '#F5F5F5',
 
         'light-border': '#414548',

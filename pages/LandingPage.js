@@ -62,7 +62,7 @@ const LandingPage = () => {
         "
         >
           <div
-            className="text-7xl font-public sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl
+            className="text-7xl font-public text-light-black2 sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl
           4xl:text-8xl 
           "
           >
@@ -72,7 +72,7 @@ const LandingPage = () => {
             </span>
           </div>
           <div
-            className="font-inter text-base font-light  py-4 pr-8 text-light-black2  sm:p-3  md:p-4  lg:text-base xl:text-base
+            className="font-inter text-base font-light  py-4 pr-8 text-light-black3  sm:p-3  md:p-4  lg:text-base xl:text-base
           
           4xl:text-base
           "
@@ -150,23 +150,28 @@ const LandingPage = () => {
       
       "
       >
-        <div>
-          <Image src="/Facebook_icon.svg" height={20} width={10} alt="" />
+        <div className="cursor-pointer">
+          <a href="https://www.facebook.com/TeamOpenAuto">
+            <Image src="/Facebook_icon.svg" height={20} width={10} alt="" />
+          </a>
         </div>
-        <div>
-          <Image src="/twitter_icon.svg" height={40} width={20} alt="" />
+        <div className="cursor-pointer">
+          <a href="https://twitter.com/TeamOpenAuto">
+            <Image src="/twitter_icon.svg" height={40} width={20} alt="" />
+          </a>
         </div>
-        <div>
-          <Image src="/Liknedin_icon.svg" height={40} width={20} alt="" />
+        <div className="cursor-pointer">
+          <a href="https://www.linkedin.com/company/openauto/">
+            <Image src="/Liknedin_icon.svg" height={40} width={20} alt="" />
+          </a>
         </div>
       </div>
       {/* form section */}
 
-      
-        <div className=" " id="Form">
-          <Form />
-        </div>
-      
+      <div className=" " id="Form">
+        <Form />
+      </div>
+
       <div
         class="flex flex-col w-full items-center pt-5 pb-3 cursor-pointer"
         onClick={() => {
@@ -196,11 +201,10 @@ const LandingPage = () => {
       {/* middle section */}
       {about && (
         <div id="hero">
-          <HeroSection  />
+          <HeroSection />
         </div>
       )}
-      
-       
+
       {/* footer */}
       {about && (
         <div

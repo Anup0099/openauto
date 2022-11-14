@@ -59,7 +59,7 @@ const Form = () => {
             Ears!
           </span>
         </div>
-        <div className="text-base font-inter">
+        <div className="text-base font-inter text-light-black3">
           If you Trouble Managing Your Order, Or Want To Talk To One Of Your
           Expert Technicians We Are Here For You!
         </div>
