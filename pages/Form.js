@@ -1,10 +1,15 @@
 import React, { useState } from 'react'
+
 import validator from 'validator'
+import 'react-phone-number-input/style.css'
+import PhoneInput from './PhoneInput'
 const Form = () => {
   const [name, setName] = useState('')
+  const [selected, setSelected] = useState(false)
   const [phone, setPhone] = useState('')
   const [error, setError] = useState(false)
   const [errorEmail, setErrorEmail] = useState(false)
+  const [value, setValue] = useState()
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -21,7 +26,7 @@ const Form = () => {
   const handleNameChange = (e) => {
     setName(e.target.value)
     const name = e.target.value
-    if (name.length > 4 || name.length === 0) {
+    if (name.length > 1 || name.length === 0) {
       setError(false)
     } else {
       setError(true)
@@ -42,13 +47,17 @@ const Form = () => {
       
       "
       >
-        <div className="text-5xl font-public text-light-black2 font-light
+        <div
+          className="text-5xl font-public text-light-black2 font-light
         
         4xl:text-6xl
-        ">
+        "
+        >
           We're All
           <br />
-          <span className="text-5xl font-public font-extrabold 4xl:text-6xl">Ears!</span>
+          <span className="text-5xl font-public font-extrabold 4xl:text-6xl">
+            Ears!
+          </span>
         </div>
         <div className="text-base font-inter">
           If you Trouble Managing Your Order, Or Want To Talk To One Of Your
@@ -58,47 +67,75 @@ const Form = () => {
       {/* form */}
       <form onSubmit={handleSubmit} className="w-full ">
         <div className=" w-3/4 flex flex-col gap-10 sm:w-full  ">
-          <div className="border border-light-black p-2 rounded-md w-full relative">
-            <div className="font-inter absolute -top-4 bg-white-smoke ml-4 p-1   text-light-black">
-              Name
-            </div>
+          <div className="flex flex-col gap-2">
+            <div
+              onClick={() => {
+                setSelected(true)
+              }}
+              className={
+                error
+                  ? 'border-2 border-red-500 p-2 rounded-md w-full relative'
+                  : selected
+                  ? 'border-2 border-blue-500 p-2 rounded-md w-full relative'
+                  : 'border-2 border-light-black2 p-2 rounded-md w-full relative'
+              }
+            >
+              <div
+                className={
+                  error
+                    ? 'font-inter absolute -top-4 bg-white-smoke ml-4 p-1   text-red-500'
+                    : 'font-inter absolute -top-4 bg-white-smoke ml-4 p-1   text-light-black'
+                }
+              >
+                Name
+              </div>
 
-            <input
-              type="text"
-              className="focus:outline-none py-2 bg-white-smoke"
-              onChange={handleNameChange}
-            />
+              <input
+                type="text"
+                className="focus:outline-none py-2 bg-white-smoke"
+                onChange={handleNameChange}
+                placeholder="Enter Your Full Name"
+              />
+            </div>
+            {error && <span className="text-red-500 font-inter">Too Short!</span>}
           </div>
-          {error && (
-            <span className="text-red-500 font-inter">
-              name should be greater than 4 characters
-            </span>
-          )}
-          <div className="border border-light-border p-2 rounded-md w-full relative">
-            <div className="absolute -top-4 bg-white-smoke ml-4 p-1 text-light-black">
+          <div
+            className={
+              error
+                ? 'border-2 border-red-500 p-2 rounded-md w-full relative'
+                : 'border border-light-border p-2 rounded-md w-full relative'
+            }
+          >
+            <div className={error? "absolute -top-4 bg-white-smoke ml-4 p-1 text-red-500":"absolute -top-4 bg-white-smoke ml-4 p-1 text-light-black"}>
               Phone
             </div>
-
-            <input
-              className="focus:outline-none py-2 bg-white-smoke"
-              type="tel"
-              onChange={(e) => {
-                setPhone(e.target.value)
-              }}
-            />
+            <PhoneInput />
           </div>
           {errorEmail && (
             <span className="text-red-500 font-inter">
               Please enter a valid phone number
             </span>
           )}
-          <div className="border border-light-border rounded-md w-full relative p-3 h-28">
-            <div className="font-inter absolute -top-4 bg-white-smoke ml-4 p-1 text-light-black">
+          <div
+            className={
+              error
+                ? 'border-2 border-red-500 rounded-md w-full relative p-3 h-28'
+                : 'border border-light-border rounded-md w-full relative p-3 h-28'
+            }
+          >
+            <div
+              className={
+                error
+                  ? 'font-inter absolute -top-4 bg-white-smoke ml-4 p-1 text-red-500'
+                  : 'font-inter absolute -top-4 bg-white-smoke ml-4 p-1 text-light-black'
+              }
+            >
               Message
             </div>
 
             <textarea
               name=""
+              placeholder="Max 200 Character"
               className="resize-none focus:outline-none h-full  w-full py-2 bg-white-smoke"
               rows="5"
             ></textarea>

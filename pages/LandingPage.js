@@ -62,12 +62,12 @@ const LandingPage = () => {
         "
         >
           <div
-            className="text-7xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl
+            className="text-7xl font-public sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl
           4xl:text-8xl 
           "
           >
             Delivered to <br />
-            <span className="text-7xl font-extrabold sm:text-5xl md:text-6xl xl:text-6xl 4xl:text-8xl">
+            <span className="text-7xl font-public font-extrabold sm:text-5xl md:text-6xl xl:text-6xl 4xl:text-8xl">
               Your Door.
             </span>
           </div>
@@ -160,6 +160,13 @@ const LandingPage = () => {
           <Image src="/Liknedin_icon.svg" height={40} width={20} alt="" />
         </div>
       </div>
+      {/* form section */}
+
+      
+        <div className=" " id="Form">
+          <Form />
+        </div>
+      
       <div
         class="flex flex-col w-full items-center pt-5 pb-3 cursor-pointer"
         onClick={() => {
@@ -167,7 +174,7 @@ const LandingPage = () => {
         }}
       >
         <a href="#hero">
-          <div className="font-inter">Explore more</div>
+          <div className="font-inter">About OpenAuto</div>
         </a>
         {about && (
           <div>
@@ -192,13 +199,8 @@ const LandingPage = () => {
           <HeroSection  />
         </div>
       )}
-      {/* form section */}
-
-      {about && (
-        <div className=" " id="Form">
-          <Form />
-        </div>
-      )}
+      
+       
       {/* footer */}
       {about && (
         <div
