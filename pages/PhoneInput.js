@@ -1220,7 +1220,7 @@ const PhoneInput = () => {
     <div className="flex items-center py-3 gap-5">
       <select
         onClick={() => {
-          setCountry(!country)
+          setCountry(country)
         }}
         className=" "
       >
@@ -1228,7 +1228,9 @@ const PhoneInput = () => {
           return (
             <option value={item.code} key={index}>
               {country ? item.code : item.name}
+                
             </option>
+            
           )
         })}
       </select>

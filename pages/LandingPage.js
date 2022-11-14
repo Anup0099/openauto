@@ -84,12 +84,12 @@ const LandingPage = () => {
 
           {/* apps available on app store */}
           <div className="flex flex-col mt-14 sm:hidden ">
-            <div className="flex items-center gap-1 text-light-black2">
+            <div className="flex font-inter items-center gap-1 text-light-black2">
               <Image src="/apple.png" height={50} width={15} alt="" />
               <h3>Avalable on app store</h3>
               <Image src="/right-arrows.png" height={50} width={30} alt="" />
             </div>
-            <div className="flex items-center gap-1 text-light-black2">
+            <div className="flex font-inter items-center gap-1 text-light-black2">
               <Image src="/playstore.png" height={50} width={15} alt="" />
               <h3>Avalable on play store</h3>
               <Image src="/right-arrows.png" height={50} width={30} alt="" />

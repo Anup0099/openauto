@@ -58,54 +58,76 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center p-20 ">
+      <div className="flex justify-center p-20 sm:p-2">
         <div className=" flex flex-wrap   sm:flex-col   lg:w-5/6  xxl:w-2/3 3xl:w-2/3 4xl:w-2/3 justify-center ">
           {/* 1 */}
-          <div className="flex  flex-col  p-20 sm:p-10 sm:w-full md:w-full lg:w-full lg:p-10 w-1/2 gap-2  border-r-2 border-b-2  sm:border-none md:border-none lg:border-none">
-            <div className="">
-              <Image src="/LiveTrack_icon.svg" height={25} width={25} alt="" />
+          <div className="flex  flex-col  pb-20 pr-20 sm:p-10 sm:w-full md:w-full lg:w-full lg:p-10 w-1/2 gap-3  border-r-2 border-b-2  sm:border-none md:border-none lg:border-none">
+            <div className="sm:flex gap-3 md:flex lg:flex">
+              <div className="pb-2">
+                <Image
+                  src="/LiveTrack_icon.svg"
+                  height={25}
+                  width={25}
+                  alt=""
+                />
+              </div>
+              <div className="font-light font-public text-xl">
+                Track <span className="font-bold">Live</span>
+              </div>
             </div>
-            <div className="font-light font-public text-xl">
-              Track <span className="font-bold">Live</span>
-            </div>
-            <div className="font-light text-base text-light-black2 font-inter">
-              Track Your Car Service Real-Time And get Status Updates
+            <div className="font-light   text-base text-light-black2 font-inter">
+              Track Your Car Service Real-Time And
+              <br />
+              get Status Updates
             </div>
           </div>
           {/* 2 */}
-          <div className="flex p-20 sm:p-10 sm:w-full md:w-full lg:w-full lg:p-10 flex-col w-1/2  gap-2 border-b-2  sm:border-none md:border-none lg:border-none">
-            <div className="">
+          <div className="flex  pl-60 pb-20 sm:p-10 sm:w-full md:w-full lg:w-full lg:p-10 flex-col w-1/2  gap-3 border-b-2  sm:border-none md:border-none lg:border-none">
+          <div className="sm:flex gap-2 md:flex lg:flex">
+
+            <div className="pb-2">
               <Image src="/Pickup_icon.svg" height={25} width={25} alt="" />
             </div>
             <div className="font-light font-public text-xl">
               Easy <span className="font-bold">Pick-ups</span>
             </div>
+          </div>
             <div className="font-light text-base text-light-black2 font-inter">
-              Book your Preferred Slot For Pick-Up Of Your Vehicle
+              Book your Preferred Slot For Pick-Up
+              <br />
+              Of Your Vehicle
             </div>
           </div>
           {/* 3 */}
-          <div className="flex p-20 sm:p-10 sm:w-full md:w-full lg:w-full lg:p-10 flex-col w-1/2  gap-2   sm:border-none md:border-none lg:border-none  border-r-2">
-            <div className="">
-              <Image src="/Discount.svg" height={25} width={25} alt="" />
+          <div className="flex pt-20   sm:p-10 sm:w-full md:w-full lg:w-full lg:p-10 flex-col w-1/2  gap-3   sm:border-none md:border-none lg:border-none  border-r-2">
+          <div className="sm:flex gap-2 md:flex lg:flex">
+            <div className="pb-2">
+              <Image src="/secure.png" height={25} width={25} alt="" />
+            </div>
+            <div className="font-light font-public text-xl">
+              Payment <span className="font-bold">Online</span>
+            </div>
+
+          </div>
+            <div className="font-light text-base text-light-black2 font-inter">
+              We Offer Flexible Payment Options For
+              <br />
+              Your Convenience
+            </div>
+          </div>
+          {/* 4 */}
+          <div className="flex  sm:pl-0 sm: sm:w-full  md:w-full lg:w-full lg:p-10 sm:border-none w-1/2 pt-20 pl-60 flex-col  gap-3   ">
+          <div className="sm:flex gap-3   md:flex lg:flex">
+
+            <div className="pb-2">
+              <Image src="/secure.png" height={25} width={25} alt="" />
             </div>
             <div className="font-light font-public text-xl">
               <span className="font-bold">Discounts</span>
             </div>
+          </div>
             <div className="font-light text-base text-light-black2 font-inter">
               Earn Exciting Rewards On Your Referrals,Share Now!
-            </div>
-          </div>
-          {/* 4 */}
-          <div className="flex sm:p-10 sm:w-full md:w-full lg:w-full lg:p-10 sm:border-none w-1/2 p-20 flex-col  gap-2   ">
-            <div className="">
-              <Image src="/secure.png" height={25} width={25} alt="" />
-            </div>
-            <div className="font-light font-public text-xl">
-              Payment<span className="font-bold">Online</span>
-            </div>
-            <div className="font-light text-base text-light-black2 font-inter">
-              We Offer Flexible Payment Options For Your Convenience
             </div>
           </div>
         </div>

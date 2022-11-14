@@ -92,7 +92,7 @@ const Form = () => {
 
               <input
                 type="text"
-                className="focus:outline-none py-2 bg-white-smoke"
+                className="focus:outline-none py-2 bg-white-smoke w-full"
                 onChange={handleNameChange}
                 placeholder="Enter Your Full Name"
               />
@@ -113,7 +113,7 @@ const Form = () => {
           </div>
           {errorEmail && (
             <span className="text-red-500 font-inter">
-              Please enter a valid phone number
+              Required
             </span>
           )}
           <div
