@@ -19,7 +19,7 @@ module.exports = {
     },
     fontFamily: {
       inter: " 'Inter',sans-serif ",
-      public: " 'Public Sans', ",
+      public: " 'Inter',sans-serif ",
     },
     screens: {
       sm: { max: '640px' },

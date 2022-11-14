@@ -36,7 +36,7 @@ const Form = () => {
   return (
     <div
       className="flex px-40 py-20 sm:gap-10 sm:px-5 sm:flex-col gap-40 
-      md:px-34 md:flex-col 
+      md:px-28  md:justify-center md:flex-col md:gap-16
       lg:px-40 lg:flex-col
     
     "
@@ -44,7 +44,7 @@ const Form = () => {
       <div
         className="flex flex-col gap-y-2 w-1/2 sm:w-full
       
-      
+      md:w-full
       "
       >
         <div
