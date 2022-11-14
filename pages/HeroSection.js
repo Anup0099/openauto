@@ -120,7 +120,7 @@ const HeroSection = () => {
           <div className="sm:flex gap-3   md:flex lg:flex">
 
             <div className="pb-2">
-              <Image src="/secure.png" height={25} width={25} alt="" />
+              <Image src="/Discount.svg" height={25} width={25} alt="" />
             </div>
             <div className="font-light font-public text-xl">
               <span className="font-bold">Discounts</span>
