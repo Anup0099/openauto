@@ -116,7 +116,7 @@ const HeroSection = () => {
             </div>
           </div>
           {/* 4 */}
-          <div className="flex  sm:pl-0 sm: sm:w-full  md:w-full md:pl-0 lg:w-full lg:p-10 sm:border-none w-1/2 pt-20 pl-60 flex-col  gap-3   ">
+          <div className="flex  sm:p-10  sm:w-full  md:w-full md:pl-0 lg:w-full lg:p-10 sm:border-none w-1/2 pt-20 pl-60 flex-col  gap-3   ">
           <div className="sm:flex gap-3   md:flex lg:flex">
 
             <div className="pb-2">
