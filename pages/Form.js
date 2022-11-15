@@ -129,6 +129,8 @@ const Form = () => {
               className={
                 msgError
                   ? 'border-2 border-red-500 p-2 rounded-md w-full relative'
+                  : error
+                  ? 'border-2 border-red-500 p-2 rounded-md w-full relative'
                   : msgSelected
                   ? 'border-2 border-blue-500 p-2 rounded-md w-full relative'
                   : 'border-2 border-light-black2 p-2 rounded-md w-full relative'
@@ -137,7 +139,7 @@ const Form = () => {
               <div
                 className={
                   msgError
-                    ? 'font-inter absolute -top-4 bg-white-smoke ml-4 p-1 text-red-500'
+                    ? 'font-inter absolute -top-4 bg-white-smoke ml-4 p-1 text-red-500 border-red-500 '
                     : 'font-inter absolute -top-4 bg-white-smoke ml-4 p-1 text-light-black'
                 }
               >
