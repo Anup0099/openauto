@@ -6,20 +6,15 @@ import PhoneInput from './PhoneInput'
 const Form = () => {
   const [name, setName] = useState('')
   const [selected, setSelected] = useState(false)
-  const [phone, setPhone] = useState('')
+  const [msgError, setMsgError] = useState(false)
+  const [msgSelected, setMsgSelected] = useState(false)
+
   const [error, setError] = useState(false)
-  const [errorEmail, setErrorEmail] = useState(false)
+  const [errorPhone, setErrorPhone] = useState(false)
   const [value, setValue] = useState()
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const reg = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/
-    // console.log(reg.test(phone))
-    if (phone.match(reg)) {
-      setErrorEmail(false)
-    } else {
-      setErrorEmail(true)
-    }
   }
 
   //name validator
@@ -97,48 +92,76 @@ const Form = () => {
                 placeholder="Enter Your Full Name"
               />
             </div>
-            {error && <span className="text-red-500 font-inter">Too Short!</span>}
+            {error && (
+              <span className="text-red-500 font-inter">Too Short!</span>
+            )}
           </div>
-          <div
-            className={
-              error
-                ? 'border-2 border-red-500 p-2 rounded-md w-full relative'
-                : 'border border-light-border p-2 rounded-md w-full relative'
-            }
-          >
-            <div className={error? "absolute -top-4 bg-white-smoke ml-4 p-1 text-red-500":"absolute -top-4 bg-white-smoke ml-4 p-1 text-light-black"}>
-              Phone
-            </div>
-            <PhoneInput />
-          </div>
-          {errorEmail && (
-            <span className="text-red-500 font-inter">
-              Required
-            </span>
-          )}
-          <div
-            className={
-              error
-                ? 'border-2 border-red-500 rounded-md w-full relative p-3 h-28'
-                : 'border border-light-border rounded-md w-full relative p-3 h-28'
-            }
-          >
+          <div className="flex flex-col gap-3">
             <div
               className={
                 error
-                  ? 'font-inter absolute -top-4 bg-white-smoke ml-4 p-1 text-red-500'
-                  : 'font-inter absolute -top-4 bg-white-smoke ml-4 p-1 text-light-black'
+                  ? 'border-2 border-red-500 p-2 rounded-md w-full relative'
+                  : 'border border-light-border p-2 rounded-md w-full relative'
               }
             >
-              Message
+              <div
+                className={
+                  error
+                    ? 'absolute -top-4 bg-white-smoke ml-4 p-1 text-red-500'
+                    : 'absolute -top-4 bg-white-smoke ml-4 p-1 text-light-black'
+                }
+              >
+                Phone
+              </div>
+              <PhoneInput state={errorPhone} setState={setErrorPhone} />
             </div>
+            {errorPhone && (
+              <span className="text-red-500 font-inter">Invalid</span>
+            )}
+          </div>
+          <div
+            className="flex flex-col gap-3"
+            onClick={() => {
+              setMsgSelected(true)
+            }}
+          >
+            <div
+              className={
+                msgError
+                  ? 'border-2 border-red-500 p-2 rounded-md w-full relative'
+                  : msgSelected
+                  ? 'border-2 border-blue-500 p-2 rounded-md w-full relative'
+                  : 'border-2 border-light-black2 p-2 rounded-md w-full relative'
+              }
+            >
+              <div
+                className={
+                  msgError
+                    ? 'font-inter absolute -top-4 bg-white-smoke ml-4 p-1 text-red-500'
+                    : 'font-inter absolute -top-4 bg-white-smoke ml-4 p-1 text-light-black'
+                }
+              >
+                Message
+              </div>
 
-            <textarea
-              name=""
-              placeholder="Max 200 Character"
-              className="resize-none focus:outline-none h-full  w-full py-2 bg-white-smoke"
-              rows="5"
-            ></textarea>
+              <textarea
+                name=""
+                placeholder="Max 200 Character"
+                className="resize-none focus:outline-none h-full  w-full py-2 bg-white-smoke"
+                rows="5"
+                onChange={(e) => {
+                  if (
+                    e.target.value.length <= 1 ||
+                    e.target.value.length > 200
+                  ) {
+                    setMsgError(true)
+                  } else {
+                    setMsgError(false)
+                  }
+                }}
+              ></textarea>
+            </div>
+            {msgError && <span className=" text-red-500">Invalid</span>}
           </div>
           <div
             className="flex font-inter border border-light-border rounded-md p-1 w-max sm:w-full sm:justify-center
