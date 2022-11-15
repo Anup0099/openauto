@@ -1,4 +1,4 @@
-const data = [
+export const data = [
     {
       name: 'Afghanistan',
       dial_code: '+93',
@@ -1211,4 +1211,3 @@ const data = [
     },
   ]
 
-  export default data
