@@ -3,6 +3,11 @@ import React, { useState, useEffect } from 'react'
 const PhoneInput = () => {
   const data = [
     {
+      name: 'Canada',
+      dial_code: '+1',
+      code: 'CA',
+    },
+    {
       name: 'Afghanistan',
       dial_code: '+93',
       code: 'AF',
@@ -187,11 +192,7 @@ const PhoneInput = () => {
       dial_code: '+237',
       code: 'CM',
     },
-    {
-      name: 'Canada',
-      dial_code: '+1',
-      code: 'CA',
-    },
+    
     {
       name: 'Cape Verde',
       dial_code: '+238',
