@@ -15,7 +15,7 @@ const PhoneInput = () => {
           const select = data.find(item => item.code === code)
           setSelected(select)
         }}
-        className="w-11 bg-white-smoke"
+        className="w-11 bg-white-smoke outline-none"
         >
         {
           data.map((item, index) => {
