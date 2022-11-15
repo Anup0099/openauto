@@ -38,17 +38,32 @@ const HeroSection = () => {
             <br />
             every vehicle owner at a click of a button.
           </div>
-          <div className="flex gap-1">
-            <Image src="/CheckMark.svg" height={10} width={10} alt="" />
-            <div>No more gambling on where you should take your car.</div>
+          {/* 1 */}
+          <div className="flex   items-start gap-2">
+            <div className="sm:pt-3">
+              <Image src="/CheckMark.svg" height={14} width={14} alt="" />
+            </div>
+            <div className="">
+              No more gambling on where you should take your car.
+            </div>
           </div>
-          <div className="flex gap-1">
-            <Image src="/CheckMark.svg" height={10} width={10} alt="" />
-            <div>No more endless piles of paper</div>
+          {/* 2 */}
+          <div className="flex gap-2    items-start">
+            <div className="sm:pt-3">
+              <Image src="/CheckMark.svg" height={14} width={14} alt="" />
+            </div>
+
+            <div className="">No more endless piles of paper</div>
           </div>
-          <div className="flex gap-1">
-            <Image src="/CheckMark.svg" height={10} width={10} />
-            <div>No more endless phone calls for updates on your vehicles</div>
+          {/* 3 */}
+          <div className="flex gap-2 items-start">
+            <div className="sm:pt-3">
+              <Image src="/CheckMark.svg" height={14} width={14} alt="" />
+            </div>
+
+            <div className="p-0">
+              No more endless phone calls for updates on your vehicles
+            </div>
           </div>
           <div>
             We bring everything you require to be on top of your vehicle needs
@@ -83,32 +98,30 @@ const HeroSection = () => {
           </div>
           {/* 2 */}
           <div className="flex  pl-60 pb-20 sm:p-10 sm:w-full md:w-full md:pl-0 lg:w-full lg:p-10 flex-col w-1/2  gap-3 border-b-2  sm:border-none md:border-none lg:border-none">
-          <div className="sm:flex gap-2 md:flex lg:flex">
-
-            <div className="pb-2">
-              <Image src="/Pickup_icon.svg" height={25} width={25} alt="" />
+            <div className="sm:flex gap-2 md:flex lg:flex">
+              <div className="pb-2">
+                <Image src="/Pickup_icon.svg" height={25} width={25} alt="" />
+              </div>
+              <div className="font-light font-public text-xl">
+                Easy <span className="font-bold">Pick-ups</span>
+              </div>
             </div>
-            <div className="font-light font-public text-xl">
-              Easy <span className="font-bold">Pick-ups</span>
-            </div>
-          </div>
             <div className="font-light text-base text-light-black3 font-inter">
               Book your Preferred Slot For Pick-Up
-              <br />
+              
               Of Your Vehicle
             </div>
           </div>
           {/* 3 */}
           <div className="flex pt-20   sm:p-10 sm:w-full md:w-full lg:w-full lg:p-10 flex-col w-1/2  gap-3   sm:border-none md:border-none lg:border-none  border-r-2">
-          <div className="sm:flex gap-2 md:flex lg:flex">
-            <div className="pb-2">
-              <Image src="/secure.png" height={25} width={25} alt="" />
+            <div className="sm:flex gap-2 md:flex lg:flex">
+              <div className="pb-2">
+                <Image src="/secure.png" height={25} width={25} alt="" />
+              </div>
+              <div className="font-light font-public text-xl">
+                Payment <span className="font-bold">Online</span>
+              </div>
             </div>
-            <div className="font-light font-public text-xl">
-              Payment <span className="font-bold">Online</span>
-            </div>
-
-          </div>
             <div className="font-light text-base text-light-black3 font-inter">
               We Offer Flexible Payment Options For
               <br />
@@ -117,15 +130,14 @@ const HeroSection = () => {
           </div>
           {/* 4 */}
           <div className="flex  sm:p-10  sm:w-full  md:w-full md:pl-0 lg:w-full lg:p-10 sm:border-none w-1/2 pt-20 pl-60 flex-col  gap-3   ">
-          <div className="sm:flex gap-3   md:flex lg:flex">
-
-            <div className="pb-2">
-              <Image src="/Discount.svg" height={25} width={25} alt="" />
+            <div className="sm:flex gap-3   md:flex lg:flex">
+              <div className="pb-2">
+                <Image src="/Discount.svg" height={25} width={25} alt="" />
+              </div>
+              <div className="font-light font-public text-xl">
+                <span className="font-bold">Discounts</span>
+              </div>
             </div>
-            <div className="font-light font-public text-xl">
-              <span className="font-bold">Discounts</span>
-            </div>
-          </div>
             <div className="font-light text-base text-light-black3 font-inter">
               Earn Exciting Rewards On Your Referrals,Share Now!
             </div>
