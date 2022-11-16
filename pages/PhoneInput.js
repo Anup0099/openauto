@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import validator from 'validator'
 // import data from './data.js'
-const PhoneInput = ({ state, setState }) => {
+const PhoneInputs = ({ state, setState }) => {
   const data = [
     {
       name: 'Canada',
@@ -1225,7 +1225,7 @@ const PhoneInput = ({ state, setState }) => {
 
   return (
     <div className="flex  items-center py-3 gap-5 ">
-      <div className="flex gap-2">
+      <div className="flex gap-2 w-full">
         <select
           onChange={(e) => {
             const code = e.target.value
@@ -1249,7 +1249,7 @@ const PhoneInput = ({ state, setState }) => {
           })}
         </select>
         <input
-          className="bg-white-smoke outline-none text-light-black3"
+          className="bg-white-smoke outline-none text-light-black3 w-full"
           value={selected.dial_code + mobile}
           autocomplete="tel"
           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
@@ -1271,4 +1271,4 @@ const PhoneInput = ({ state, setState }) => {
   )
 }
 
-export default PhoneInput
+export default PhoneInputs

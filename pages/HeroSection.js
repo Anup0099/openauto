@@ -2,10 +2,10 @@ import React from 'react'
 import Image from 'next/image'
 const HeroSection = () => {
   return (
-    <div className="flex flex-col  w-full h-full  text-light-black2  ">
+    <div className="flex flex-col  w-full h-full  text-light-border  ">
       <div className="flex ">
-        <div className="flex   w-1/4 justify-center items-center  p-8 relative  ">
-          <div className="flex items-center sm:w-max sm:h-10/12   w-max h-max ">
+        <div className="flex bg-off-white  w-1/4 justify-center items-center  p-8 relative  ">
+          <div className=" bg-off-white hidden items-center sm:w-max sm:h-10/12   w-max h-max ">
             <Image
               src="/ABOUT.png"
               className=""
@@ -15,31 +15,31 @@ const HeroSection = () => {
             />
           </div>
           <div
-            className="text-5xl font-public px-3 font-light z-10 absolute top-10 sm:top-20 -right-44
+            className="text-6xl text-light-border  font-public px-3 font-light z-10 absolute top-10 sm:top-20 -right-44
         
         4xl:text-6xl
         "
           >
             About <br />{' '}
-            <span className="text-5xl font-extrabold 4xl:text-6xl">
+            <span className="text-6xl font-extrabold 4xl:text-6xl text-light-border">
               OpenAuto
             </span>
           </div>
         </div>
         <div
-          className=" font-inter text-light-black3 flex flex-col text-base w-3/4 align-center p-10 mt-32 gap-5 justify-end
+          className=" font-inter font-light text-light-black3 flex flex-col text-base w-3/4 align-center px-10 py-20  mt-32 gap-5 justify-end
           sm:mt-40
           
           
           "
         >
-          <div class="text-light-black3">
+          <div class="text-light-black3 ">
             Our mission is to make auto repair and maintenance accessible to
             <br />
             every vehicle owner at a click of a button.
           </div>
           {/* 1 */}
-          <div className="flex   items-start gap-2">
+          <div className="flex font-public font-normal  items-start gap-2">
             <div className="sm:pt-3">
               <Image src="/CheckMark.svg" height={14} width={14} alt="" />
             </div>
@@ -48,7 +48,7 @@ const HeroSection = () => {
             </div>
           </div>
           {/* 2 */}
-          <div className="flex gap-2    items-start">
+          <div className="flex gap-2  font-public font-normal  items-start">
             <div className="sm:pt-3">
               <Image src="/CheckMark.svg" height={14} width={14} alt="" />
             </div>
@@ -56,7 +56,7 @@ const HeroSection = () => {
             <div className="">No more endless piles of paper</div>
           </div>
           {/* 3 */}
-          <div className="flex gap-2 items-start">
+          <div className="flex gap-2 font-public font-normal items-start">
             <div className="sm:pt-3">
               <Image src="/CheckMark.svg" height={14} width={14} alt="" />
             </div>
@@ -87,7 +87,7 @@ const HeroSection = () => {
                 />
               </div>
               <div className="font-light font-public text-xl">
-                Track <span className="font-bold">Live</span>
+                Track <span className="font-extrabold">Live</span>
               </div>
             </div>
             <div className="font-light   text-base text-light-black3 font-inter">
@@ -97,29 +97,27 @@ const HeroSection = () => {
             </div>
           </div>
           {/* 2 */}
-          <div className="flex  pl-60 pb-20 sm:p-10 sm:w-full md:w-full md:pl-0 lg:w-full lg:p-10 flex-col w-1/2  gap-3 border-b-2  sm:border-none md:border-none lg:border-none">
+          <div className="flex  w-1/2 pl-36 justify-end pb-20 sm:p-10 sm:w-full md:w-full md:pl-0 lg:w-full lg:p-10 flex-col   gap-3 border-b-2  sm:border-none md:border-none lg:border-none">
             <div className="sm:flex gap-2 md:flex lg:flex">
               <div className="pb-2">
                 <Image src="/Pickup_icon.svg" height={25} width={25} alt="" />
               </div>
               <div className="font-light font-public text-xl">
-                Easy <span className="font-bold">Pick-ups</span>
+                Easy <span className="font-extrabold">Pick-ups</span>
               </div>
             </div>
             <div className="font-light text-base text-light-black3 font-inter">
-              Book your Preferred Slot For Pick-Up
-              
-              Of Your Vehicle
+              Book your Preferred Slot For Pick-Up Of Your Vehicle
             </div>
           </div>
           {/* 3 */}
           <div className="flex pt-20   sm:p-10 sm:w-full md:w-full lg:w-full lg:p-10 flex-col w-1/2  gap-3   sm:border-none md:border-none lg:border-none  border-r-2">
             <div className="sm:flex gap-2 md:flex lg:flex">
               <div className="pb-2">
-                <Image src="/secure.png" height={25} width={25} alt="" />
+                <Image src="/Payment_icon.svg" height={25} width={25} alt="" />
               </div>
               <div className="font-light font-public text-xl">
-                Payment <span className="font-bold">Online</span>
+                Payment <span className="font-extrabold">Online</span>
               </div>
             </div>
             <div className="font-light text-base text-light-black3 font-inter">
@@ -129,17 +127,19 @@ const HeroSection = () => {
             </div>
           </div>
           {/* 4 */}
-          <div className="flex  sm:p-10  sm:w-full  md:w-full md:pl-0 lg:w-full lg:p-10 sm:border-none w-1/2 pt-20 pl-60 flex-col  gap-3   ">
+          <div className="flex  sm:p-10  sm:w-full  md:w-full md:pl-0 lg:w-full  lg:p-10 sm:border-none w-1/2 pt-20 pl-36 flex-col   gap-3   ">
             <div className="sm:flex gap-3   md:flex lg:flex">
               <div className="pb-2">
                 <Image src="/Discount.svg" height={25} width={25} alt="" />
               </div>
               <div className="font-light font-public text-xl">
-                <span className="font-bold">Discounts</span>
+                <span className="font-bold text-light-border">Discounts</span>
               </div>
             </div>
             <div className="font-light text-base text-light-black3 font-inter">
-              Earn Exciting Rewards On Your Referrals,Share Now!
+              Earn Exciting Rewards On Your 
+              
+              Referrals,Share Now!
             </div>
           </div>
         </div>
