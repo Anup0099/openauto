@@ -15,13 +15,13 @@ const HeroSection = () => {
             />
           </div>
           <div
-            className="text-6xl text-light-border  font-public px-3 font-light z-10 absolute top-10 sm:top-20 -right-44
+            className="text-6xl text-light-border  font-public px-3 font-light z-10 absolute top-10 sm:top-20 sm:text-5xl -right-44
         
-        4xl:text-6xl
+        4xl:text-8xl
         "
           >
             About <br />{' '}
-            <span className="text-6xl font-extrabold 4xl:text-6xl text-light-border">
+            <span className="text-6xl font-extrabold 4xl:text-6xl sm:text-5xl text-light-border">
               OpenAuto
             </span>
           </div>
@@ -57,7 +57,7 @@ const HeroSection = () => {
           </div>
           {/* 3 */}
           <div className="flex gap-2 font-public font-normal items-start">
-            <div className="sm:pt-3">
+            <div className="sm:pt-3 ">
               <Image src="/CheckMark.svg" height={14} width={14} alt="" />
             </div>
 
