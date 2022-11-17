@@ -10,7 +10,7 @@ const LandingPage = () => {
   return (
     <div className=" sm:w-full sm:flex sm:flex-col">
       {/* navbar */}
-      <div className="nav flex justify-between py-8 px-12 xlm:px-16 3xlm:px-28">
+      <div className="nav flex justify-between sm:px-10 md:px-10 lg:px-10  py-8 px-10 xlm:px-20 xxlm:px-20 3xlm:px-28  ">
         <Image
           src="/o.svg"
           className="4xl:w-80 "
@@ -26,17 +26,19 @@ const LandingPage = () => {
       </div>
       {/*  hero section*/}
       <div
-        className="flex p-16 lg:px-0 items-center sm:px-0 sm:flex-col sm:w-full 
+        className="flex justify-between items-center p-16 lg:px-0 sm:px-0 sm:flex-col sm:w-full 
       md:p-0 md:flex-col md:w-full
       lg:flex-col lg:w-full xxl:grow 3xl:grow 4xl:gap-0
       3xlm:px-28
-      xl:pt-0"
-      >
+      xl:pt-0">
         <div
-          className="flex flex-col gap-5 sm:px-10 w-2/5 sm:w-full font-public
+          className="flex  flex-col gap-5 sm:px-10 w-2/5 sm:w-full font-public
         md:w-full md:px-10
         lg:w-full lg:px-10
-        xl:pt-20"
+        xl:pt-20
+        xxl:pt-28
+        3xlm:pt-36
+         "
         >
           <div>
             <div
@@ -59,7 +61,7 @@ const LandingPage = () => {
           </div>
 
           {/* apps available on app cstore */}
-          <div className="flex flex-col  mt-14 font-semibold sm:hidden lg:hidden gap-5 md:hidden ">
+          <div className="flex flex-col  mt-14 xl:mt-0 font-semibold sm:hidden lg:hidden gap-5 md:hidden ">
             <div className="flex font-inter  items-center gap-2 text-light-border">
               <Image src="/Apple_Icon.svg" height={50} width={15} alt="" />
               <h3>Available on App store</h3>
@@ -73,30 +75,29 @@ const LandingPage = () => {
           </div>
         </div>
         {/* vancouver image */}
-        <div className="h-[350px] mdm:h-[500px] lgm:h-[700px] xlm:h-[500px] xlm:w-[600px] xxlm:w[800px] w-full relative sm:pt-5 sm:w-full">
+        <div className="flex w-max sm:w-full lg:w-full lg:justify-center xl:w-[600px] relative sm:pt-5  ">
           <Image
             src="/Hero_image.png"
-            className="sm:h-full "
-            fill
-            // height={400}
-            // width={700}
+            className=""
+            height={400}
+            width={744}
             alt=""
           />
-          <div className="absolute lgm:-left-20 xlm:-left-20 xlm:w-[300px] xlm:h-[140px] xxlm:-left-44 -left-32 -bottom-5 z-10 xxlm:h-[200px] xxlm:w-[400px] lgm:h-[150px] lgm:w-[300px] h-[150px] w-[300px]">
+          <div className="absolute -bottom-5 xlm:w-3/5 xlm:-left-28 sm:w-[300px] sm:h-[120px] md:w-[350px] md:h-[140px] lg:w-[400px] lg:h-[160px] lg:-left-20 sm:-left-32 md:-left-10 z-10 xxlm:-left-44  ">
             <Image
               src="/rangerover.png"
-              fill
-              className=""
+              height={240}
+              width = {564}
               alt="range" 
             />
           </div>
         </div>
         {/* car image */}
-        <div className="flex flex-col mt-14 md:mt-0 lg:text-base text-light-border font-semibold items-center xl:hidden xxl:hidden 3xl:hidden 4xl:hidden">
+        <div className="flex flex-col mt-14 lg:text-base text-light-border font-semibold items-center xl:hidden xxl:hidden 3xl:hidden 4xl:hidden">
           <div className="flex items-center gap-3 md:px-10">
             <Image src="/Apple_icon.svg" height={50} width={15} alt="" />
             <h3>Available on App Store</h3>
-            <Image src="/right-arrows.png" height={50} width={30} alt="" />
+            <Image src="/ArrowRight_icon.svg" height={50} width={30} alt="" />
           </div>
           <div className="flex items-center gap-3 mt-4">
             <Image src="/GooglePlay_icon.svg" height={50} width={15} alt="" />
@@ -110,8 +111,8 @@ const LandingPage = () => {
       <div
         className="flex justify-end items-center px-12 gap-6 sm:hidden 
         md:hidden lg:hidden
-        xl:px-12
-        2xl:px-12
+        xl:px-14
+        xxl:px-16
         3xl:px-36
         4xl:px-48">
         <div className="cursor-pointer">

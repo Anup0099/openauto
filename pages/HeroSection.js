@@ -15,8 +15,7 @@ const HeroSection = () => {
             />
           </div>
           <div
-            className="text-6xl text-light-border  font-public px-3 font-light z-10 absolute top-10 sm:top-20 sm:text-5xl -right-44
-        
+            className="text-6xl text-light-border  font-public px-3 font-light z-10 absolute top-10 sm:top-20 sm:text-5xl -right-52 
         4xl:text-8xl
         "
           >
