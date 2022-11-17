@@ -18,7 +18,7 @@ const LandingPage = () => {
           width={200}
           alt=""
         />
-        <button className="border border-gray-400 text-off-white3 bg-white-smoke rounded-md sm:hidden">
+        <button className="border border-light-border text-off-white3 bg-white-smoke rounded-md sm:hidden">
           <a href="#Form" className="font-public text-off-white3 px-8">
             Contact
           </a>
