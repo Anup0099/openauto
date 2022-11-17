@@ -8,7 +8,7 @@ const LandingPage = () => {
   const [about, setAbout] = useState(false)
 
   return (
-    <div className=" sm:w-full sm:flex sm:flex-col">
+    <div className=" sm:w-full sm:flex sm:flex-col ">
       {/* navbar */}
       <div className="nav flex justify-between sm:px-10 md:px-10 lg:px-10  py-8 px-10 xlm:px-20 xxlm:px-20 3xlm:px-28  ">
         <Image
@@ -26,9 +26,9 @@ const LandingPage = () => {
       </div>
       {/*  hero section*/}
       <div
-        className="flex justify-between items-center p-16 lg:px-0 sm:px-0 sm:flex-col sm:w-full 
+        className="flex justify-between items-center p-[70px] lg:px-0 sm:px-0 sm:flex-col sm:w-full 
       md:p-0 md:flex-col md:w-full
-      lg:flex-col lg:w-full xxl:grow 3xl:grow 4xl:gap-0
+      lg:flex-col lg:w-full  3xl:grow 4xl:gap-0
       3xlm:px-28
       xl:pt-0">
         <div
@@ -51,7 +51,7 @@ const LandingPage = () => {
               </span>
             </div>
             <div
-              className=" font-inter text-base font-light  py-4 pr-8 text-light-border  sm:p-3  md:p-4  lg:text-base xl:text-base
+              className=" font-inter text-base font-light  py-4 pl-[10px] text-light-border  sm:p-3  md:p-4  lg:text-base xl:text-base
               4xl:text-base "
             >
               Contrary To Popular Belief, Lorem Ipsum Is Not Simply Random Text.
@@ -60,8 +60,8 @@ const LandingPage = () => {
             </div>
           </div>
 
-          {/* apps available on app cstore */}
-          <div className="flex flex-col  mt-14 xl:mt-0 font-semibold sm:hidden lg:hidden gap-5 md:hidden ">
+          {/* apps available on app store */}
+          <div className="flex flex-col pl-[10px]  mt-14 xl:mt-0 font-semibold sm:hidden lg:hidden gap-5 md:hidden ">
             <div className="flex font-inter  items-center gap-2 text-light-border">
               <Image src="/Apple_Icon.svg" height={50} width={15} alt="" />
               <h3>Available on App store</h3>
