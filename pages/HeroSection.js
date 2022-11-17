@@ -110,7 +110,7 @@ const HeroSection = () => {
             </div>
           </div>
           {/* 3 */}
-          <div className="flex pt-20   sm:p-10 sm:w-full md:w-full lg:w-full lg:p-10 flex-col w-1/2  gap-3   sm:border-none md:border-none lg:border-none  border-r-2">
+          <div className="flex pt-20   sm:p-10 sm:w-full md:w-full md:pt-0 lg:w-full lg:p-10 flex-col w-1/2  gap-3   sm:border-none md:border-none lg:border-none  border-r-2">
             <div className="sm:flex gap-2 md:flex lg:flex">
               <div className="pb-2">
                 <Image src="/Payment_icon.svg" height={25} width={25} alt="" />

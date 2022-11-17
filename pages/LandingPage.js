@@ -42,7 +42,7 @@ const LandingPage = () => {
         >
           <div>
             <div
-              className="text-7xl font-light font-public text-light-border sm:text-5xl md:text-4xl lg:text-6xl xl:text-6xl
+              className="text-7xl font-light font-public text-light-border sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl
               4xl:text-8xl "
             >
               Delivered to <br />
