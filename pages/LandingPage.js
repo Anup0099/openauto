@@ -75,7 +75,7 @@ const LandingPage = () => {
           </div>
         </div>
         {/* vancouver image */}
-        <div className="flex w-max sm:w-full lg:w-full lg:justify-center xl:w-[600px] relative sm:pt-5  ">
+        <div className="flex  sm:w-full lg:w-full lg:justify-center xl:w-[600px] relative sm:pt-5  ">
           <Image
             src="/Hero_image.png"
             className=""
